@@ -31,8 +31,13 @@
        
         <div class="data">
             
-            <h2 id="name-output">SilvenLEAF</h1>
-            <div id="message-output">Welcome to my beautiful world!!!</div>
+            <% if(data){ %>
+                <h2 id="name-output"><%= data.name %></h1>
+                <div id="message-output"><%= data.message %></div>
+            <% }else{ %> 
+                <h2 id="name-output">SilvenLEAF</h1>
+                <div id="message-output">Welcome to my beautiful world!!!</div>
+            <% } %>
             
         </div>
         

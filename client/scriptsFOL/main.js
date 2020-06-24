@@ -34,6 +34,9 @@ postForm.addEventListener('submit', (e)=>{
         return res.json();
     }).then( data =>{
         console.log(data);
+
+        nameOutput.textContent = data.name;
+        messageOutput.textContent = data.message;
     }).catch( err =>{
         console.log(err);
     })
