@@ -41,10 +41,10 @@ app.get('/', (req, res, next)=>{
 });
 
 //--------errors handling
-app.use((err, req, res)=>{
+app.use((err, req, res, next)=>{
     console.log(err);
-    res.send({alert: `There's an ERROR!!!`});
-})
+    res.status(500).send({alert: `There's an ERROR!!!`});
+});
 
 
 
