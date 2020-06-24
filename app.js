@@ -43,7 +43,7 @@ app.get('/', (req, res, next)=>{
 //--------errors handling
 app.use((err, req, res, next)=>{
     console.log(err);
-    res.status(500).send({alert: `There's an ERROR!!!`});
+    return res.status(422).send({alert: `There's an ERROR!!!`});
 });
 
 

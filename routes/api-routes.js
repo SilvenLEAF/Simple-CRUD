@@ -19,9 +19,25 @@ router.post('/', (req, res, next)=>{
     try{
         console.log(req.body);
 
+        Comments.findOne({name: req.body.name})
+        .then((foundItem)=>{
+            if(foundItem){
+                res.status(422).send({alert: 'Name already exists!'});
+            }else{
+                Comments.create(req.body)
+            .then((savedItem)=>{
+                    res.send(savedItem);
+            });
+            }
+        });
+
+
+
+
+
         Comments.create(req.body)
             .then((savedItem)=>{
-                res.send(savedItem);
+                    res.send(savedItem);
             });
     }catch(next){
         next();
