@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
 
 const app = express();
@@ -7,6 +8,22 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use('/stylesURL', express.static('./client/stylesFOL'));
 app.use('/scriptsURL', express.static('./client/scriptsFOL'));
+
+
+
+/* -------------------------
+.        database
+------------------------- */
+mongoose.connect('mongodb+srv://SilvenLEAF:shenl0ng@simple-crud-orox4.mongodb.net/SimpleCrudDB?retryWrites=true&w=majority', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+}, ()=>{
+    console.log(`Connected to MongoDB`);
+});
+
+
 
 
 
