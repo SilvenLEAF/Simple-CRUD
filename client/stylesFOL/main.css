@@ -1,0 +1,37 @@
+body{
+    background-color: #099;
+    font-size: 16px;
+}
+.container-fluid{
+    max-width: 600px;
+}
+
+.data{
+    margin: 20px;
+    padding: 20px;
+    background-color: #ccc;
+    font-family: Dosis;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #000;
+    text-shadow: 3px 3px 4px#fff;
+}
+
+form{
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #500;
+
+    color: #000;
+    font-weight: bold;
+    font-size: 150%;
+    font-family: tahoma;
+    letter-spacing: 2px;
+}
+
+input, button{
+    margin-top: 20px;
+}
+h1, h2, .message{
+    margin: 0;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "simple-crud",
+  "version": "1.0.0",
+  "description": "A simple CRUD App. Learning the FrontEND BackEND Database workflow!!!",
+  "engines": {
+    "node": "12.8.0"
+  },
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilvenLEAF/Simple-CRUD.git"
+  },
+  "keywords": [
+    "CRUD"
+  ],
+  "author": "SilvenLEAF",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SilvenLEAF/Simple-CRUD/issues"
+  },
+  "homepage": "https://github.com/SilvenLEAF/Simple-CRUD#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1"
+  }
+}
